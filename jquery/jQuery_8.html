@@ -1,0 +1,25 @@
+<html>
+<head>
+<script src="jquery-3.3.1.min.js" 
+type="text/javascript"></script>   
+<script>
+
+var nuevo
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        $("#test1").text(nuevo);
+    });
+    $("#btn2").click(function(){
+    nuevo=prompt('Dame el nombre','');
+    });
+    
+});
+</script>
+</head>
+<body>
+
+Querida <span id="test1">Pepi</span>, te echo de menos.<br><br>
+<button id="btn2">Pide nombre</button>
+<button id="btn1">Cambia el texto</button>
+</body>
+</html>

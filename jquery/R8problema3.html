@@ -1,0 +1,57 @@
+<!-- Problema 3. Crea una página ej_3.html que tenga un botón y dos listas ordenadas. La
+primera lista ordenada debe tener tres elementos: Sevilla, Madrid y Huelva. La segunda
+lista ordenada está creada pero no tiene elementos. Al pulsar el botón debe salir una
+ventana emergente pidiendo un número entero. Cuando el usuario introduzca el número
+n, en la segunda lista debe aparecer un nuevo elemento con el texto El cuadrado de n es
+n
+2
+. Por ejemplo, si el usuario ha introducido el 7 el nuevo elemento de la segunda lista
+debe ser El cuadrado de 7 es 49.
+-->
+
+<html>
+<head>
+<title>Ejercicio 3</title>
+<script src="jquery-3.4.0.min.js" type="text/javascript"></script>	
+</head>
+
+<body>
+<!-- Falta hacer que el elemento nuevo aparezca solo en la lista de los numeros
+-->
+<script>
+
+
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        var C = prompt('Dime un numero entero','n');
+		
+        $("#lista").append("<li>"+"El cuadrado de "+C+ " es "+C*C+".</li>");
+    });
+});
+</script>
+
+<button id="btn1"> Dime un numero</button>
+<br>
+
+<section> 
+
+  <h2>Las ciudades</h2> 
+  <ol> 
+    <li>Sevilla</li>
+    <li>Madrid</li>
+    <li>Huelva</li>
+  </ol>
+</section>
+
+<section> 
+  <h2>numericos</h2> 
+  
+  <ol id="lista" > 
+    
+  </ol>
+</section>
+
+<br>
+
+</body>
+</html>

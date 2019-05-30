@@ -1,0 +1,15 @@
+<html><head>
+<script src="jquery-3.3.1.min.js" 
+type="text/javascript"></script>	
+<script>
+$(document).ready(function(){
+$("#p1").mouseenter(function(evento){
+	$("#p2").css("color", "blue");});
+$("#p1").mouseleave(function(evento){
+	$("#p2").css("color", "white");});})
+</script></head><body>
+<p id="p1">Pon el cursor encima</p>
+<p id="p2" style="color: white;">
+Has puesto el cursor encima.</p>
+</body></html>
+

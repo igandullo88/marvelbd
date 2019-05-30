@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta char set="UTF-8">
+<script src="jquery-3.3.1.min.js" 
+type="text/javascript"></script>  
+
+
+<script>
+var C
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        C = prompt('Dime una ciudad','Nombre');
+    });
+
+    $("#btn2").click(function(){
+        $("ol").append("<li>"+C+"</li>");
+    });
+});
+</script>
+</head>
+<body>
+<button id="btn1"> Dime una cuidad</button>
+<button id="btn2"> Ponla en la lista</button>
+<ol>
+  <li>Sevilla</li>
+  <li>Madrid</li>
+</ol>
+</body></html>
+

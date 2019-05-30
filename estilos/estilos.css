@@ -1,0 +1,247 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+	box-sizing:border-box;
+}
+
+html, body{
+	 height: 100%;
+	 width:100%;
+	 padding: 0;
+	 margin: 20px;
+}
+
+#imagen{
+	z-index: -999;
+	width:100%;
+	height:auto;
+	position: fixed;
+	top:0;
+	left:0;
+}
+
+form{
+	margin:auto;
+	width:50%;
+	max-width:5000px;
+	background:#F3F3F3;
+	padding:30px;
+	border: 1px solid rgba(0,0,0,0.2);
+	opacity: 0.95;
+
+}
+
+h2{
+	text-align:center;
+	margin-bottom:20px;
+	color:rgba(0,0,0,0.5);
+	font-size:40px;
+	 
+	
+
+}
+
+.fuente{
+	
+	text-align:center;
+	margin-bottom:20px;
+	color:rgba(0,0,0,0.5);
+	font-size:60px;
+	 
+}
+input{
+	display:block;
+	padding:10px;
+	width:100%;
+	margin:30px 0;
+	font-size:20px;
+	 
+}
+
+.s1{
+	display:block;
+	padding:10px;
+	width:48%;
+	margin:20px 0;
+	font-size:17px;
+	height:110px;
+	 
+}
+
+.s2{
+	display:block;
+	padding:10px;
+	width:48%;
+	margin:-60px 365;
+	font-size:17px;
+	position:relative;
+	top:-70;
+	height:110px;
+	 
+}
+
+.s3{
+	display:block;
+	width:48%;
+	font-size:20px;
+	margin:10px 10;
+	position:relative;
+	height:10px;
+	 
+}
+
+p{
+
+ margin:10px 5;
+ font-size:18px;
+	
+}
+
+ 
+
+
+
+
+
+
+.select{
+	display:block;
+	padding:10px;
+	width:100%;
+	margin:30px 0;
+	font-size:20px;
+	
+}
+
+.select select{
+	display:block;
+	padding:10px;
+	width:100%;
+	font-size:20px;
+	
+}
+
+.radio2{
+	display:block;
+	padding:5px;
+	width:10%;
+	font-size:20px;
+	margin:20px 400;
+	height:10px;
+	position:relative;
+    top:-50px;
+     
+	
+}
+
+.radio1{
+	display:block;
+	padding:5px;
+	width:5%;
+	font-size:20px;
+	margin:30px 10;
+	height:20px;
+	
+}
+
+
+.circ2{
+	 
+	position:relative;
+    top:-45px;
+	margin:30px 50;
+     
+	
+}
+
+.circ1{
+	 position:relative;
+     top:-45px;
+	 margin:30px 80;
+	
+}
+
+.check{
+	 position:relative;
+     top:45px;
+	 margin:30px -340;
+	
+}
+
+
+
+
+
+
+
+
+h5{
+	 position:relative;
+    
+	 margin:30px 20;
+	
+}
+
+
+h6{
+	 position:relative;
+    
+	 margin:30px 50;
+	
+}
+
+
+input[type="submit"]{
+	background: linear-gradient(#FFDA63,#FFB940);
+	border:0;
+	color:brown;
+	opacity:0.8;
+	cursor:pointer;
+	border-radius:20px;
+	margin-bottom:0;
+	
+}
+
+
+
+
+input[type="submit"]:hover{
+	opacity:1;
+}
+
+
+input[type="submit"]:active{
+	transform:scale(0.95);
+}
+
+@media(max-width:768px){
+	form{
+		width:75%;
+	}
+}
+
+@media(max-width:480px){
+	form{
+		width:95%;
+	}
+}
+
+ 
+
+a{
+	text-align:right;
+	margin-bottom:20px;
+	color:"blue";
+
+}
+
+input[type="radio"]{
+	
+	
+}
+
+
+
+
+

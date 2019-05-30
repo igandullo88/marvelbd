@@ -1,0 +1,47 @@
+.check{
+	
+	position:relative;
+	right:255px;
+	top:-125;
+	width:30px;
+	
+	
+	
+}
+
+.p{
+	
+	position:relative;
+	right:-100px;
+	top:80;
+	width:30px;
+	
+
+}
+
+.area{
+	
+	position:relative;
+	right:-70px;
+	top:-140;
+	width:500px;
+	
+	
+}
+
+.p1{
+	
+	position:relative;
+	right:-70px;
+	top:-140;
+	width:500px;
+
+}
+
+#boton{
+	
+	position:relative;
+	right:-70px;
+	top:-40px;
+	
+}
