@@ -1,0 +1,28 @@
+<!-- Relación 7a -->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Pulse el botón para comenzar</p>
+
+<button onclick="myFunction()"> Botón</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var color = prompt("Introduce un color", ".");
+  
+  while (color !=  "rojo") {
+    var color = prompt("Ese es horrible. Introduce otro color", color);
+  }
+  text = "Joder ya era hora de que eligieras un color bonito";
+  alert(text)
+  text = "El color elegido con buen criterio ha sido:"+color;
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+
+</body>
+</html>

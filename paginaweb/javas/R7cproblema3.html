@@ -1,0 +1,56 @@
+
+<!-- Problema 3. Crea una página ej_3.html que pida al usuario un número entero N
+(entre 1 y 7) y que escriba los números desde el 1 al N, de manera que la anchura en
+píxeles de los caracteres que forman los números deben ser ese número, esto es, el 1 debe
+tener 1 píxel de anchura, el 2 debe tener 2 píxeles, así hasta N que debe tener N píxeles
+de anchura. Debes usar while. -->
+
+
+<!DOCTYPE html>
+<html>
+
+
+
+<body>
+
+
+
+<script type="text/javascript">
+
+
+
+function ej3c(){
+    
+	var N = prompt("Introduce un número entre 1 y 7");
+	while (N >  7 | N <1 | parseInt(N)!=N) {
+	alert("El valor debe estar entre 1 y 7 y ser entero");
+	N = prompt("Introduce N otra vez");
+  }
+  var contador = 1;
+  while(contador <= N) {
+  
+  text = "<span style='font-size:"+contador+"em;'>"+contador+"</span>";
+document.write(text);
+contador++;
+}
+
+    
+}
+
+
+</script>
+
+<!--
+<button type="button" onclick="ej3c()">Pulsa</button>
+-->
+
+<script>  ej3c() </script>
+
+</body>
+
+
+
+
+
+
+</html>

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+    <title>jQuery ImageSelect && chosen</title>
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="css/chosen.css">
+	<link rel="stylesheet" href="css/ImageSelect.css">
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/chosen.jquery.js"></script>
+<script src="js/ImageSelect.jquery.js"></script>
+
+</head>
+<body>
+    <div class="container">
+	
+	
+	
+<select multiple="multiple" class="my-select">
+ <option data-img-src="http://as00.epimg.net/img/comunes/fotos/fichas/equipos/large/152.png">Recreativo de Huelva</option>
+ <option  data-img-src="http://as00.epimg.net/img/comunes/fotos/fichas/equipos/large/171.png">Real Betis</option>
+<option  data-img-src="http://as00.epimg.net/img/comunes/fotos/fichas/equipos/large/17.png">Valencia CF</option>
+<option  data-img-src="http://as00.epimg.net/img/comunes/fotos/fichas/equipos/large/1.png">Real Madrid</option>
+
+</select>
+
+<script>
+ $(".my-select").chosen();
+</script>
+ </div>
+</body>
+</html>

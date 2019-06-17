@@ -1,0 +1,44 @@
+<html>
+<head> </head>
+<body>
+
+<form>
+
+<label for="numero1">Introduce el numero 1: </label>
+<input type="text" id="numero1">
+
+<br>
+<label for="numero2">Introduce el numero 2: </label>
+<input type="text" id="numero2">
+
+<button type="button"
+	onclick="sumar('numero1','numero2','resultado')">
+	SUMAR</button>
+</form>
+<br>
+<p id="resultado"></p>
+
+
+<!-- SCRIPT -->
+<script type="text/javascript">
+
+function sumar(id1,id2,id3)
+{
+	var valor1 = parseInt(document.getElementById(id1).value);
+	var valor2 = parseInt(document.getElementById(id2).value);
+	
+	if (isNaN(valor1) || isNaN(valor2)) {
+		 alert("Error, debes introducir numeros"); 
+	} else {
+		var suma = valor1+valor2;
+		document.getElementById(id3).innerHTML=
+		"La suma de "+valor1+" y "+valor2+" es: "+suma;
+	}
+}
+
+</script>
+
+
+</body>
+
+</html>

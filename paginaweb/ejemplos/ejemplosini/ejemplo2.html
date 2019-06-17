@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("div").focusin(function(){
+    $(this).css("background-color", "#FFFFCC");
+  });
+  $("div").focusout(function(){
+    $(this).css("background-color", "#FFFFFF");
+  });
+});
+</script>
+</head>
+<body>
+
+<div style="border: 1px solid black;padding:10px;">
+  Nombre: <input type="text"><br><br>
+  Apellido: <input type="text">
+</div>
+
+<p>Clica en una celda para cambiar el color del cuadro. Clica de nuevo fuera de la celda y volverá a como estaba en un principio.</p>
+
+</body>
+</html>
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.3.1.min.js"></script>
+<script>
+$(document).ready(function(){
+
+  $("button").click(function(){
+      var nombre=$('#nombre').val();
+      var ciudad=$('#ciudad').val();
+	  
+       $.post("ejemplo3.php",{ name: nombre, city: ciudad})
+	   .done(function(data){
+              alert(data);
+       });
+    });
+});
+</script>
+</head>
+<body>
+
+
+nombre:<input type="text" id="nombre"> <br>
+ciudad:<input type="text" id="ciudad"> <br>
+
+<button>Boton</button>
+
+</body>
+</html>
+

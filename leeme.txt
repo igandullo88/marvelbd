@@ -1,0 +1,11 @@
+Para comenzar a usar la página tienes que hacer lo siguiente:
+-Antes que nada no olvides activar Apache y mysql en el XAMPP
+-Después copia la carpeta trabajobd en la ruta de tu servidor local
+-Accede desde tu localhost a trabajodb/BD/confirm.php
+-Te saldrá ventanas emergentes preguntándote si quieres cargar diferentes bases de datos.
+- Acepta bdtrabajo.sql y paises.sql, las demás si las tienes no las cargues.
+
+- Una vez cargues las BD, solo tienes que registrarte correctamente y luego logearte.
+       _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ _ _ _ _ _  _ _ _ _ _ _  _ _ _ _ _
+      |  Nota: No tienes que buscar más página, te autodirige la web.  |
+       _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ _ _ _ _ _  _ _ _ _ _ _  _ _ _ _ _

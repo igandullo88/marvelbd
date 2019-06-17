@@ -1,0 +1,31 @@
+<!-- R7a problema 2-->
+
+<!--  Escribe un script de JS que declare una variable suma con valor inicial
+0. Luego iremos sumando a esa variable un número aleatorio del 1 al 100 hasta que
+sumemos 1.000 o más, imprimiendo el valor de la variable suma después de cada
+operación. Será necesario utilizar el bucle while porque no sabemos exactamente el
+número de iteraciones que tendremos que realizar (dependerá de los valores aleatorios que
+se vayan obteniendo).-->
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<script>
+
+var x= 0 ;
+
+
+while (x<=1000)
+{
+document.write(x);
+document.write('<br>');
+x=x+Math.floor(Math.random() * 100);
+}
+document.write(x)
+</script>
+
+</body>
+</html>

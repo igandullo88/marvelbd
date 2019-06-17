@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+Ejercicio 5
+<!-- Al darle al botón aparece un reloj en la página-->
+<p id="demo"></p>
+
+<button onclick="myFunction()"> Dime la hora</button>
+
+<!--el set interval sirve para cada cuando tiempo quieres que se actualice el reloj-->
+<script>
+
+<!---->
+
+function myFunction() {
+  var myVar = setInterval(myFunction, 100);
+  var d = new Date();
+  var t = d.toLocaleTimeString();
+  document.getElementById("demo").innerHTML = t;
+}
+</script>
+
+<!-- la funcion myFunction es el reloj en si, que aparece por el boton que esta referido a la función.-->
+</body>
+</html>

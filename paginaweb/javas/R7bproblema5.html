@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type"
+          content = "text/html; charset=UTF-8"/>
+    <title>Ejercicio 5</title>
+    <script>
+	function ej5(){
+	
+    var a=parseInt(prompt("Introduce un número"));
+    var b=parseInt(prompt("Introduce un número"));
+	var contador=0;
+	var resto=a%b;
+	while (a>1 && resto==0){
+contador++;
+a=a/b;
+resto=a%b;
+}
+ alert(contador);
+}
+	
+	</script>
+    </head>
+<body>
+
+    <script>ej5()</script>
+    </body>
+</html>

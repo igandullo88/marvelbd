@@ -1,0 +1,57 @@
+<!-- Problema 5. Crea una página ej_5.html en la que haya una lista ordenada con diez
+elementos y un botón. Al pulsar el botón debe salir una ventana emergente que pida
+al usuario un número n entre el 1 y el 10. Una vez que el sistema tenga el número, el
+elemento de la lista de posición n-ésima debe cambiar su contenido a color azul.
+-->
+
+<html>
+<head>
+<title>Ejercicio 5</title>
+<script src="jquery-3.4.0.min.js" type="text/javascript"></script>	
+
+<script>
+
+$(document).ready(function(){
+    $("#btn1").click(function(){
+        var C = prompt('Dime un numero entre 1 y 10','n');
+		
+		if(C<1| C>10 | isNaN(C)===true)
+		{alert("Debes introducir un numero entero y debe estar entre 1 y 10");
+		prompt('Dime un numero entre 1 y 10','n')}
+		else{ $("#n"+C).css({'background':'blue'});}
+	
+		;
+		
+		
+       
+		
+    });
+});
+
+</script>
+</head>
+
+
+<body>
+
+<section> 
+
+  <h2>Lista</h2> 
+  <ol> 
+    <li id= "n1">Elemento 1</li>
+    <li id= "n2">Elemento 2</li>
+    <li id= "n3">Elemento 3</li>
+	<li id= "n4">Elemento 4</li>
+    <li id= "n5">Elemento 5</li>
+    <li id= "n6">Elemento 6</li>
+	<li id= "n7">Elemento 7</li>
+    <li id= "n8">Elemento 8</li>
+    <li id= "n9">Elemento 9</li>
+	<li id= "n10">Elemento 10</li>
+  </ol>
+</section>
+
+<button id="btn1"> Dime un numero</button>
+</body>
+</html>
+

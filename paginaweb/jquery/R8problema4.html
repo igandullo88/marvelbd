@@ -1,0 +1,53 @@
+<!-- Problema 4. Crea una página ej_4.html con un cuadrado de 20 píxeles de lado y de
+color azul. Al poner el ratón encima, debe cambiar su tamaño a un cuadrado de 10*SEG
+píxeles de lado, donde SEG es el número de segundos que marca el reloj del ordenador
+al realizar la acción. Cuando el ratón salga del cuadrado, este debe volver a su tamaño
+original.
+
+-->
+
+
+
+<html>
+<head>
+<title>Ejercicio 4</title>
+<style type="text/css">
+		#Cuadrado{
+			width: 20px;
+			height: 20px;
+			background: #2980b9; 
+			position: relative;
+		}
+		
+	</style>
+	
+<script src="jquery-3.4.0.min.js" type="text/javascript"></script>
+
+
+<script>
+	 var d = new Date();
+     var seg = d.getSeconds();
+	
+	$(document).ready(function() {
+	$("#Cuadrado").mouseover(function(){
+			$("#Cuadrado").animate({height: 10*seg+"px", width: 10*seg+"px"},1000);
+	});
+	
+	$("#Cuadrado").mouseout(function(){
+			$("#Cuadrado").css({height: "20px", width: "20px"});
+	});
+ 
+});
+</script>
+
+</head>
+
+
+
+<body>
+
+<div id="Cuadrado"></div>
+
+</body>
+
+</html>

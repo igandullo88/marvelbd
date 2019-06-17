@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<meta char set="UTF−8">
+</head>
+
+<body>
+	
+	<div id="A"></div>
+	<p id="parrafo"></p>
+	
+	<button type="button"
+	onclick="f('A','HOLA')">
+	Haz la prueba para el div A</button>
+	
+	<button type="button"
+	onclick="f('parrafo','ADIOS')">
+	Haz la prueba para el parrafo</button>
+	
+<!-- SCRIPT -->
+	
+	<script type="text/javascript">
+	function f(id,texto)
+	{
+		document.getElementById(id).innerHTML=texto;
+		/*window.alert("MODIFICACION REALIZADA");*/
+	}
+	</script>
+	
+<!-- -->	
+</body>
+
+</html>

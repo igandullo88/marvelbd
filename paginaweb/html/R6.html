@@ -1,0 +1,70 @@
+<!-- Relación html 6 -->
+<html>
+
+<head>
+<meta http-equiv= "Content-Type" content="text/html;charset=UTF-8"/> <!-- acentos, lenguaje español-->
+<meta name="description" content="carrera popular"/> <!-- busqueda en google y palabra clave-->
+<meta name="keywords" content="carrera, pueblo"/>
+<meta name="author" content="Isaac"/>
+
+<title>Formulario de registro - La carrera de mi pueblo.</title>
+</head>
+
+<body style="background-color:rgb(255,227,52);"> <!-- color de fondo de la pagina -->
+
+<h1> Formulario Carrera de mi Pueblo </h1>
+
+<br>
+
+Esta página es para registrarse en la carrera popular de Gelves, apuntate rellenando el cuestionario de acontinuación:<br>
+
+  <!-- formulario-->
+<p>
+ 
+<form action="/destinatario" target="_blank" method="GET">   <!-- elemento formulario, get es la forma menos seguro te aparece el nombre arriba-->
+												<!-- form es el cuerpo del formulario-->
+  Nombre:<br>
+  <input type="text" maxlength=50 name="Nombre" value="">  <!-- maxlength=50 maxi longitud -->
+  <br>
+ Apellidos:<br>
+  <input type="text" maxlength=50 name="Apellidos" value="">
+  <br><br>
+
+</p>
+
+<p>
+ <!-- otro elemento formulario (puntitos) -->
+
+
+  <input type="radio" name="género" value="hombre" checked> Hombre<br>  <!-- checked sale seleccionado -->
+  <input type="radio" name="género" value="mujer"> Mujer<br>
+ 
+</p>
+
+
+<p>Seleccione un elemento de la lista:
+
+  <select name="Categoría edad">     <!-- select para la lista -->
+    <option value=" Infantil (De 0 a 14 años)"> Infantil (De 0 a 14 años)</option>
+    <option value=" Juvenil(De 14 a 17 años)"> Juvenil(De 14 a 17 años)</option>
+    <option value="Adulto (A partir de 18 años)">Adulto (A partir de 18 años)</option>
+    
+  </select>
+  <br><br>
+</p>
+
+<input type="checkbox" name="proteccion datos" value="proteccion datos" checked>Declaro haber leido y aceptar las condiciones
+generales del programa y la normativa sobre protección de datos
+<br><br> <!-- casilla de verificación -->
+
+
+
+
+
+<input type="submit" value="Enviar"> <!-- boton de enviar ->
+
+</form>
+</body>
+
+
+</html>

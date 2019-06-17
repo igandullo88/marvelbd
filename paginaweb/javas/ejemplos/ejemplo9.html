@@ -1,0 +1,60 @@
+<html>
+<head> </head>
+<body>
+
+<form>
+
+<label for="nombre">Introduce tu nombre: </label>
+<input type="text" id="nombre">
+
+<br>
+<label for="nota1">Introduce la nota 1: </label>
+<input type="text" id="nota1">
+
+<label for="nota2">Introduce la nota 2: </label>
+<input type="text" id="nota2">
+
+<button type="button"
+	onclick="chequear_aprobado('nombre','nota1','nota2','resultado')">
+	Estas aprobado?</button>
+</form>
+<br>
+<p id="resultado"></p>
+
+
+<!-- SCRIPT -->
+<script type="text/javascript">
+
+function chequear_aprobado(idNombre,idNota1,idNota2,idResultado)
+{
+	var nombre = document.getElementById(idNombre).value;
+	if (nombre=='') {
+		alert("Error: el nombre esta vacio");
+		return;
+	} 
+	
+	var nota1 = parseInt(document.getElementById(idNota1).value);
+	var nota2 = parseInt(document.getElementById(idNota2).value);
+	
+	if (isNaN(nota1) || isNaN(nota2)) {
+		 alert("Error, debes introducir las notas como numeros"); 
+		return;
+	} 
+	
+	var media = (nota1+nota2)/2;
+	
+	if (media>=5) {
+		document.getElementById(idResultado).innerHTML=
+		nombre+" esta aprobado con nota media "+media;
+	} else {
+		document.getElementById(idResultado).innerHTML=
+		nombre+" esta suspenso";
+	}
+}
+
+</script>
+
+
+</body>
+
+</html>

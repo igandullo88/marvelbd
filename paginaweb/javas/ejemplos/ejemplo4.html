@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta char set="UTF−8">
+</head>
+<body>
+<img onmouseenter="contador()"
+src="MickeyMouse.png"
+alt="Raton Mickey" width="50">
+<p>Pasa el raton por la imagen</p>
+<p id="A"></p>
+
+<script type="text/javascript">
+	
+	var x=0;
+	function contador()
+	{
+		x++;
+		f('A',"El numero de veces que se ha pulsado es "+x);
+	}
+
+	function f(id,texto)
+	{
+		document.getElementById(id).innerHTML=texto;
+		
+	}
+</script>
+
+
+</body>
+</html>
